@@ -3,13 +3,11 @@ import asyncio
 import os
 from together import AsyncTogether, Together
 
-# 🎨 Set up Streamlit App Title with style
 st.markdown(
     "<h1 style='text-align: center; color: #4CAF50;'>🌟 Mixture-of-Agents LLM App 🌟</h1>",
     unsafe_allow_html=True,
 )
 
-# 🔐 Get API Key
 st.markdown("### 🔑 API Key")
 together_api_key = st.text_input("Enter your Together API Key:", type="password")
 
@@ -28,7 +26,6 @@ if together_api_key:
 
     aggregator_system_prompt = """You have been provided with a set of responses from various open-source models to the latest user query. Your task is to synthesize these responses into a single, high-quality response. It is crucial to critically evaluate the information provided in these responses, recognizing that some of it may be biased or incorrect. Your response should not simply replicate the given answers but should offer a refined, accurate, and comprehensive reply to the instruction. Ensure your response is well-structured, coherent, and adheres to the highest standards of accuracy and reliability. Responses from models:"""
 
-    # 💬 User Prompt Input
     st.markdown("### ❓ Ask a Question")
     user_prompt = st.text_input("Enter your question:")
 
@@ -49,13 +46,11 @@ if together_api_key:
         st.success("🚀 Querying models...")
         results = await asyncio.gather(*[run_llm(model) for model in reference_models])
 
-        # 🎯 Show individual responses
         st.markdown("## 🧠 Individual Model Responses")
         for model, response in results:
             with st.expander(f"📨 Response from `{model}`"):
                 st.write(response)
 
-        # 📝 Aggregation Step
         st.markdown("## 🪄 Aggregated Response")
         st.info("Synthesizing responses with aggregator model...")
 
@@ -78,7 +73,6 @@ if together_api_key:
         st.code("✅ Aggregation Complete", language="markdown")
 
 
-    # 🕹️ Action Button
     st.markdown("### 🚦 Actions")
     if st.button("✨ Get Answer"):
         if user_prompt:
@@ -90,7 +84,6 @@ if together_api_key:
 else:
     st.warning("⚠️ Please enter your Together API key to use the app.")
 
-# 📚 Sidebar Info
 st.sidebar.title("📖 About This App")
 st.sidebar.info(
     "This app demonstrates a **Mixture-of-Agents** approach using multiple Language Models (LLMs) to answer a single question."
