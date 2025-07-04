@@ -58,9 +58,8 @@ streamlit run agent_fusion_app.py
 ---
 
 ## 📄 Project Location:
-Same directory as your previous project (`Podscribe AI - Blog to Podcast Agent`):
 ```
-D:/Projects/agent-verse/agents/AgentFusion
+.../agent-verse/agents/AgentFusion
 ```
 
 ---
