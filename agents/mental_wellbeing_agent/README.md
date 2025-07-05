@@ -1,4 +1,4 @@
-# 🧠 Mental Wellbeing Agent
+# 🧠 MindMend AI Agent
 
 A multi-agent AI-powered Streamlit app for generating comprehensive, personalized **mental health support plans**.
 
@@ -6,7 +6,7 @@ A multi-agent AI-powered Streamlit app for generating comprehensive, personalize
 
 ## 💡 What is this?
 
-**Mental Wellbeing Agent** combines the expertise of three specialized AI agents—Assessment, Action, and Follow-up—to analyze your mental health situation and generate actionable, supportive plans tailored to your needs.
+**MindMend AI Agent** combines the expertise of three specialized AI agents—Assessment, Action, and Follow-up—to analyze your mental health situation and generate actionable, supportive plans tailored to your needs.
 
 ---
 

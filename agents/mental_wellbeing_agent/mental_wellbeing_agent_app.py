@@ -24,10 +24,10 @@ This application is a supportive tool and does not replace professional mental h
 - Seek immediate professional help
 """)
 
-st.title("🧠 Mental Wellbeing Agent")
+st.title("🧠 MindMend AI Agent")
 
 st.info("""
-**Meet Your Mental Wellbeing Agent Team:**
+**Meet Your MindMend AI Agent Team:**
 
 🧠 **Assessment Agent** - Analyzes your situation and emotional needs
 🎯 **Action Agent** - Creates immediate action plan and connects you with resources
