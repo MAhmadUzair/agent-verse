@@ -3,4 +3,6 @@
 .venv
 agents/podscribe-ai/audio_generations/703e2011-edd5-4b93-9a96-45d251ea56e1.mp3
 agents/podscribe-ai/audio_generations/podcast_ad94e935-c89c-469e-87ae-e96509d43963.wav
-agents/mental_wellbeing_agent/.cache/
+agents/mind_mend_ai_agent/.cache/
+test_api.py
+__pycache__/
