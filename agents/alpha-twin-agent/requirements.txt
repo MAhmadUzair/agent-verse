@@ -1,0 +1,8 @@
+streamlit>=1.36.0
+python-dotenv>=1.0.1
+yfinance>=0.2.40
+pandas>=2.2.2
+numpy>=1.26.4
+# agno framework & OpenAI model bindings
+agno>=0.4.2
+openai>=1.35.7
